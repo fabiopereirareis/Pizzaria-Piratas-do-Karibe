@@ -12,3 +12,8 @@ git pull origin master --allow-unrelated-histories
 https://community.umbler.com/br/t/resolvendo-o-erro-fatal-refusing-to-merge-unrelated-histories-no-git/657
 ============================================================================
 
+tirando fase secreta do git, para não pedir mais no push
+
+https://docs.github.com/pt/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
+===========================================================================
+

@@ -8,6 +8,7 @@ public class PizzariaPpkApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PizzariaPpkApplication.class, args);
+		System.out.println("Hello Word");
 	}
 
 }
