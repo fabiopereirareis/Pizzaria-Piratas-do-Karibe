@@ -1,6 +1,26 @@
+criar pasta back-end e front-end
+iniciar git
+sincronizar com git hub
+
 start na aplicação 
 
 criar arquivos de configuração de teste, dev, prod
 configurar o arquivo dev com os dados do banco de dados
+
+criar package entities
+criar entidade
+
+criar package repositories
+criar interface extendendo JPARepository
+
+criar package controllers
+criar controler
+!!!!!!!!!!!!!!!!!!!!!!! problema no retorno por id(findById) !!!!!!!!!!!!!!!
+o método tem que retornar um Optional por conta que a requisição pode reornar null
+ex:  @GetMapping("/{id}")
+    public Optional<Contact> findById(@PathVariable Long id){
+        return contactRepository.findById(id);
+
+ 
 
 
