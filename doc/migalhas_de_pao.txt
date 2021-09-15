@@ -1,1 +1,6 @@
-start na aplicação ok
+start na aplicação 
+
+criar arquivos de configuração de teste, dev, prod
+configurar o arquivo dev com os dados do banco de dados
+
+
