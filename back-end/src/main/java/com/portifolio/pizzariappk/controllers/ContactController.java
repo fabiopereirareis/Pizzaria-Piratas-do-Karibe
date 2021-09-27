@@ -2,6 +2,7 @@ package com.portifolio.pizzariappk.controllers;
 
 import com.portifolio.pizzariappk.entities.Contact;
 import com.portifolio.pizzariappk.repositories.ContactRepository;
+import com.portifolio.pizzariappk.services.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,14 +13,14 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/contact")
 public class ContactController {
 
     @Autowired
-    private ContactRepository contactRepository;
+    private ContactService contactService;
 
     @GetMapping("/{id}")
     public Optional<Contact> findById(@PathVariable Long id){
-        return contactRepository.findById(id);
+        return contactService.findById(id);
     }
 }
