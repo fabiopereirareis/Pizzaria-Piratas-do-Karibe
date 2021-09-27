@@ -1,7 +1,6 @@
 package com.portifolio.pizzariappk.controllers;
 
 import com.portifolio.pizzariappk.entities.Contact;
-import com.portifolio.pizzariappk.repositories.ContactRepository;
 import com.portifolio.pizzariappk.services.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
