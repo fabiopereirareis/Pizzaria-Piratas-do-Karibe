@@ -1,5 +1,6 @@
 package com.portifolio.pizzariappk.controllers;
 
+import com.portifolio.pizzariappk.dto.ContactDTO;
 import com.portifolio.pizzariappk.entities.Contact;
 import com.portifolio.pizzariappk.services.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class ContactController {
     private ContactService contactService;
 
     @GetMapping("/{id}")
-    public Optional<Contact> findById(@PathVariable Long id){
-        return contactService.findById(id);
+    public Optional<ContactDTO> findById(@PathVariable Long id){
+        return Optional.ofNullable(contactService.findById(id));
     }
 }
