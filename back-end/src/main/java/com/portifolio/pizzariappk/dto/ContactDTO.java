@@ -16,11 +16,21 @@ public class ContactDTO {
     private String type; // mudar para enum
 
     // ============================ olhar a classe model, teve lteração la para funcionar aqui
-    public Contact build(Optional<Contact> byId){
-        Contact contact = new Contact()
-                .setNumber(this.number)
-                .setType(this.type);
-        return contact;
-    }
+//    public Contact build(Optional<Contact> byId){
+//        Contact contact = new Contact()
+//                .setNumber(this.number)
+//                .setType(this.type);
+//        return contact;
+//    }
 
+//    public ContactDTO(Contact contact){
+//        this.number = contact.getNumber();
+//        this.type = contact.getType();
+//    }
+
+
+    public ContactDTO(Optional<Contact> byId) {
+        this.number = byId.get().getNumber();
+        this.type = byId.get().getType();
+    }
 }

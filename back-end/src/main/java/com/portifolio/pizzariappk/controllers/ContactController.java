@@ -19,8 +19,10 @@ public class ContactController {
     @Autowired
     private ContactService contactService;
 
+
+
     @GetMapping("/{id}")
-    public Optional<ContactDTO> findById(@PathVariable Long id){
-        return Optional.ofNullable(contactService.findById(id));
+    public ContactDTO findById(@PathVariable Long id){
+        return contactService.findById(id);
     }
 }

@@ -15,9 +15,7 @@ public class ContactService {
     ContactRepository contactRepository;
 
     public ContactDTO findById(Long id){
-        ContactDTO contactDTO = new ContactDTO();
-        Optional<Contact> contact = contactRepository.findById(id);
-        contactDTO.build(contact);
-        return contactDTO ;
+
+        return new ContactDTO(contactRepository.findById(id));
     }
 }
