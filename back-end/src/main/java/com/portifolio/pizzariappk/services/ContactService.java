@@ -19,6 +19,6 @@ public class ContactService {
     ContactMapper contactMapper;
 
     public Optional<Contact> findById(Long id){
-//        return contactRepository.findById(id);
+        return contactRepository.findById(id);
     }
 }
