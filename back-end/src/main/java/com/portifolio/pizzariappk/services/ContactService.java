@@ -1,12 +1,10 @@
 package com.portifolio.pizzariappk.services;
 
-import com.portifolio.pizzariappk.dto.ContactDTO;
-import com.portifolio.pizzariappk.entities.Contact;
+import com.portifolio.pizzariappk.dto.ContactResponseDTO;
+import com.portifolio.pizzariappk.dto.request.ContactRequestDTO;
 import com.portifolio.pizzariappk.repositories.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public class ContactService {
@@ -14,8 +12,13 @@ public class ContactService {
     @Autowired
     ContactRepository contactRepository;
 
-    public ContactDTO findById(Long id){
+    public ContactResponseDTO findById(Long id){
+        return new ContactResponseDTO(contactRepository.findById(id));
+    }
 
-        return new ContactDTO(contactRepository.findById(id));
+    public ContactRequestDTO addContact(ContactRequestDTO contactRequestDTO){
+//        contactRequestDTO.build(contactRequestDTO);
+        contactRepository.save(contactRequestDTO.build());
+        return contactRequestDTO;
     }
 }
