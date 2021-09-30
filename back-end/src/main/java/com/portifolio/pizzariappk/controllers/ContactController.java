@@ -2,11 +2,13 @@ package com.portifolio.pizzariappk.controllers;
 
 import com.portifolio.pizzariappk.dto.ContactResponseDTO;
 import com.portifolio.pizzariappk.dto.request.ContactRequestDTO;
+import com.portifolio.pizzariappk.entities.Contact;
 import com.portifolio.pizzariappk.services.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -33,5 +35,11 @@ public class ContactController {
     @GetMapping("/list")
     public List<ContactResponseDTO> findAll(){
         return contactService.listAllcontacts();
+    }
+
+    @PutMapping("/update/{id}")
+    // método para atualizar contato
+    public ContactRequestDTO upDateContact(@RequestBody ContactRequestDTO contactRequestDTO, @PathVariable Long id){
+        return contactService.upDateContact(contactRequestDTO, id);
     }
 }

@@ -33,4 +33,28 @@ public class ContactService {
         return listAll.stream().map(x -> new ContactResponseDTO(Optional.ofNullable(x)))
         .collect(Collectors.toList());
     }
+
+    // método para atualizar contato
+    public ContactRequestDTO upDateContact(ContactRequestDTO contactRequestDTO, Long id){
+        if(verifyExists(id)){
+            Contact contact = new Contact();
+            contact.setId_contact(id);
+            contact.setNumber(contactRequestDTO.getNumber());
+            contact.setType(contactRequestDTO.getType());
+            contactRepository.save(contact);
+            return contactRequestDTO;
+        }
+        return addContact(contactRequestDTO);
+    }
+
+
+    private boolean verifyExists(Long id){
+        boolean exists = true;
+        if(contactRepository.findById(id) != null){
+            exists = true ;
+        }else {
+            exists = false ;
+        }
+        return exists;
+    }
 }
