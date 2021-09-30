@@ -9,11 +9,7 @@ import org.mapstruct.factory.Mappers;
 public interface ContactMapper {
 
     ContactMapper INSTANCE = Mappers.getMapper(ContactMapper.class);
-<<<<<<< HEAD
 
-    ContactDTO contactToContactDTO(Contact contact);
-=======
     
     ContactResponseDTO contactToContactDTO(Contact contact);
->>>>>>> mapper
 }
