@@ -47,6 +47,12 @@ public class ContactService {
         return addContact(contactRequestDTO);
     }
 
+    public void deleteContact(Long id){
+        if(verifyExists(id)){
+            contactRepository.deleteById(id);
+        }
+    }
+
 
     private boolean verifyExists(Long id){
         boolean exists = true;

@@ -42,4 +42,9 @@ public class ContactController {
     public ContactRequestDTO upDateContact(@RequestBody ContactRequestDTO contactRequestDTO, @PathVariable Long id){
         return contactService.upDateContact(contactRequestDTO, id);
     }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteContact(@PathVariable Long id){
+        contactService.deleteContact(id);
+    }
 }
