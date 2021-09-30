@@ -1,13 +1,13 @@
 package com.portifolio.pizzariappk.controllers;
 
+import com.portifolio.pizzariappk.dto.ContactResponseDTO;
+import com.portifolio.pizzariappk.dto.request.ContactRequestDTO;
 import com.portifolio.pizzariappk.entities.Contact;
 import com.portifolio.pizzariappk.services.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 
@@ -18,8 +18,33 @@ public class ContactController {
     @Autowired
     private ContactService contactService;
 
+
+    // método para pesquisar por id
     @GetMapping("/{id}")
-    public Optional<Contact> findById(@PathVariable Long id){
+    public ContactResponseDTO findById(@PathVariable Long id){
         return contactService.findById(id);
+    }
+
+    // método para adicionar novo contato
+    @PostMapping
+    public ContactRequestDTO addContact(@RequestBody ContactRequestDTO contactRequestDTO){
+        return contactService.addContact(contactRequestDTO);
+    }
+
+    // método para listar todos contatos
+    @GetMapping("/list")
+    public List<ContactResponseDTO> findAll(){
+        return contactService.listAllcontacts();
+    }
+
+    @PutMapping("/update/{id}")
+    // método para atualizar contato
+    public ContactRequestDTO upDateContact(@RequestBody ContactRequestDTO contactRequestDTO, @PathVariable Long id){
+        return contactService.upDateContact(contactRequestDTO, id);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteContact(@PathVariable Long id){
+        contactService.deleteContact(id);
     }
 }

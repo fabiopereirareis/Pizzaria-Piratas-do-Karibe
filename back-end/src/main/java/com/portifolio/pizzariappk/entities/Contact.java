@@ -1,14 +1,14 @@
 package com.portifolio.pizzariappk.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.Accessors;
 
 import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Accessors(chain = true)
 @Entity(name = "contato")
 public class Contact {
     @Id
