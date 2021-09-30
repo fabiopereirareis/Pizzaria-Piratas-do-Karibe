@@ -6,6 +6,8 @@ import com.portifolio.pizzariappk.services.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/api/contact")
@@ -25,5 +27,11 @@ public class ContactController {
     @PostMapping
     public ContactRequestDTO addContact(@RequestBody ContactRequestDTO contactRequestDTO){
         return contactService.addContact(contactRequestDTO);
+    }
+
+    // método para listar todos contatos
+    @GetMapping("/list")
+    public List<ContactResponseDTO> findAll(){
+        return contactService.listAllcontacts();
     }
 }
