@@ -39,6 +39,11 @@ npm start
 endereço do projeto local:
 http://localhost:4200/
 
+mudar linhas no angular.json
+"inlineTemplate": false,
+"inlineStyle": false,
+
+
 
 
 
