@@ -24,6 +24,29 @@ na classe model colocar a anotação:
 @Accessors(chain = true)
 para poder montar o objeto na classe DTO
 ============================================================================
++++++++++++++++++++++++++++++ front-end +++++++++++++++++++++++++++++++++++
+instalando o angular:
+
+sudo npm i -g @angular/cli modo global
+
+sudo npm i -g @angular/cli modo local
+
+criar novo projeto angular:
+
+ng new nomedoprojeto --minimal // para instalação minima
+
+iniciar projeto angular
+
+npm start
+
+
+
+
+
+
+
+
+
 
 
 
