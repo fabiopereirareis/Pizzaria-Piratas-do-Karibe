@@ -28,16 +28,20 @@ para poder montar o objeto na classe DTO
 instalando o angular:
 
 sudo npm i -g @angular/cli modo global
-
 sudo npm i -g @angular/cli modo local
 
 criar novo projeto angular:
-
 ng new nomedoprojeto --minimal // para instalação minima
 
 iniciar projeto angular
-
 npm start
+
+endereço do projeto local:
+http://localhost:4200/
+
+
+
+
 
 
 
