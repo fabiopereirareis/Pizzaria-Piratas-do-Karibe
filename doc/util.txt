@@ -57,10 +57,14 @@ ng g c caminho
 
 importar modulo para o projeto:
 no arquivo app.module no início importar o mudulo desejado
+módulo do menu superior
 ex: import { MatToolbarModule} from '@angular/material/toolbar';
 ((((dica))) digitar import depois from 'caminho' que o inicio ajuda a completar
 
 
+módulo do menu lateral(nav-bar)
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatListModule } from '@angular/material/list'
 
 
 
