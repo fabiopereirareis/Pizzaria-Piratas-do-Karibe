@@ -67,6 +67,14 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
 
 módulo do conteudo
+import { MatCardModule } from '@angular/material/card';
+
+
+/////// bind de evento usar ()
+/////// bind de atributo usar []
+
+módulo para botões 
+import { MatButtonModule } from '@angular/material/button';
 
 
 

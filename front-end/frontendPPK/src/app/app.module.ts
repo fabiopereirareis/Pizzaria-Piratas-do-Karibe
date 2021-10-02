@@ -9,8 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // componentes importados
 import { MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav'; 
-import { MatListModule } from '@angular/material/list'
-import { MatCardModule } from '@angular/material/card'
+import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 // meus componentes criados no Angular CLI
 import { HeaderComponent } from './components/template/header/header.component';
@@ -39,7 +40,8 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
     
   ],
   providers: [],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'; // classe router para ter acesso as rotas do sistema
 
 @Component({
   selector: 'app-product-crud',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { } // injetando um objeto do tipo router para ser usado nesse componente
 
   ngOnInit(): void {
+  }
+
+  navigateToProductCreate(): void {
+    this.router.navigate(['/products/create']) // rota sendo usada
   }
 
 }
