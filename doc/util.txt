@@ -85,6 +85,7 @@ https://kheronn-machado.medium.com/angular7-netlify-hospedagem-5ba92a220295
 
 módulos para http cliente
 
+import { HttpClientModule} from '@angular/common/http';
 
 
 

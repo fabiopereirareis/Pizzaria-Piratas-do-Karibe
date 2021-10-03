@@ -24,6 +24,8 @@ ex:  @GetMapping("/{id}")
 ============================= front end ===============================
 módulos para comunicação com back-end (requisições http)
 
+criar método de comunicação com back-end, usar observable e subscrible nos métodos
+
 
 
  
