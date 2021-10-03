@@ -76,6 +76,9 @@ import { MatCardModule } from '@angular/material/card';
 módulo para botões 
 import { MatButtonModule } from '@angular/material/button';
 
+criar uma classe para model
+deve ser interface, os atributos devem ser iguais do back-end, se tiver algum campo opcional
+coloca-se ? para sinalizar que esse atributo é opcional
 
 
 
