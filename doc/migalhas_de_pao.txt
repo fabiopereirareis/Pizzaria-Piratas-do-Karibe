@@ -21,6 +21,11 @@ ex:  @GetMapping("/{id}")
     public Optional<Contact> findById(@PathVariable Long id){
         return contactRepository.findById(id);
 
+============================= front end ===============================
+módulos para comunicação com back-end (requisições http)
+
+
+
  
 
 

@@ -80,6 +80,12 @@ criar uma classe para model
 deve ser interface, os atributos devem ser iguais do back-end, se tiver algum campo opcional
 coloca-se ? para sinalizar que esse atributo é opcional
 
+colocar projeto no ar (netilify)
+https://kheronn-machado.medium.com/angular7-netlify-hospedagem-5ba92a220295
+
+módulos para http cliente
+
+
 
 
 
