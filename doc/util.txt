@@ -39,6 +39,48 @@ npm start
 endereço do projeto local:
 http://localhost:4200/
 
+mudar linhas no angular.json
+"inlineTemplate": false,
+"inlineStyle": false,
+
+para usar uma variável que está no componente em uma pagina HTML:
+usar a dupla chaves {{ nome da variavel }}, com isso o valor da variável
+é visto por todo módulo
+
+adicional material design no angular via cli(coomand line interface)
+ng add @angular/material
+
+criar um novo componente:
+ng generate component components/template/header
+ou 
+ng g c caminho
+
+importar modulo para o projeto:
+no arquivo app.module no início importar o mudulo desejado
+módulo do menu superior
+ex: import { MatToolbarModule} from '@angular/material/toolbar';
+((((dica))) digitar import depois from 'caminho' que o inicio ajuda a completar
+
+
+módulo do menu lateral(nav-bar)
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatListModule } from '@angular/material/list'
+
+módulo do conteudo
+import { MatCardModule } from '@angular/material/card';
+
+
+/////// bind de evento usar ()
+/////// bind de atributo usar []
+
+módulo para botões 
+import { MatButtonModule } from '@angular/material/button';
+
+criar uma classe para model
+deve ser interface, os atributos devem ser iguais do back-end, se tiver algum campo opcional
+coloca-se ? para sinalizar que esse atributo é opcional
+
+
 
 
 
