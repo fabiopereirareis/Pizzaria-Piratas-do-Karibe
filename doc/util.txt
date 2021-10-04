@@ -87,8 +87,11 @@ módulos para http cliente
 
 import { HttpClientModule} from '@angular/common/http';
 
+problema com atualizar paginas redirect
+https://medium.com/@seraya/netlify-redirect-rules-for-angular-6-apps-d9f27ad40449
 
-
+build do projeto
+ng build --prod
 
 
 
