@@ -93,6 +93,8 @@ https://medium.com/@seraya/netlify-redirect-rules-for-angular-6-apps-d9f27ad4044
 build do projeto
 ng build --prod
 
+subir backend no heroku 
+https://ichi.pro/pt/implantando-projetos-de-subdiretorio-no-heroku-16707110695922
 
 
 
