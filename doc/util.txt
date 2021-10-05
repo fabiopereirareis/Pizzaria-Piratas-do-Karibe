@@ -96,6 +96,9 @@ ng build --prod
 subir backend no heroku 
 https://ichi.pro/pt/implantando-projetos-de-subdiretorio-no-heroku-16707110695922
 
+esse funcionou
+https://github.com/timanovsky/subdir-heroku-buildpack
+
 
 
 
