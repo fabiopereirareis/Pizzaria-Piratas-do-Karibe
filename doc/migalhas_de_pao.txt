@@ -28,6 +28,7 @@ criar método de comunicação com back-end, usar observable e subscrible nos m�
 
 =============================== sistema no ar ==========================
 front: https://piratasdokaribe.netlify.app/
+back: https://backend-ppk.herokuapp.com/
 
 
  
