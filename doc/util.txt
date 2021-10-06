@@ -86,6 +86,11 @@ https://kheronn-machado.medium.com/angular7-netlify-hospedagem-5ba92a220295
 módulos para http cliente
 
 import { HttpClientModule} from '@angular/common/http';
+problema ao importar esse modulo
+1°tentativa: tentar compilar esse módulo separado
+https://stackoverflow.com/questions/60130728/tried-to-overwrite-angular-cdk-stepper-step-header-d-ts-ivy-ngcc-bak-with-an
+
+
 
 problema com atualizar paginas redirect
 https://medium.com/@seraya/netlify-redirect-rules-for-angular-6-apps-d9f27ad40449

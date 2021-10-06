@@ -12,6 +12,7 @@ import java.util.Optional;
 
 
 @RestController
+@CrossOrigin(origins = "*") // liberando qualquer domínio, sem restrição
 @RequestMapping("/api/contact")
 public class ContactController {
 

@@ -30,6 +30,11 @@ criar método de comunicação com back-end, usar observable e subscrible nos m�
 front: https://piratasdokaribe.netlify.app/
 back: https://backend-ppk.herokuapp.com/
 
+=======================================================================
+não está adicionando item no back end, consertar isso antes de ir pro formulário
+provavelmete é por causa da habilitação de acesso de varias vias, na configuração do controller
+@CrossOrigin(origins = "http://localhost:4200") // porta padrão angular
+@CrossOrigin(origins = "*") // liberando qualquer domínio, sem restrição
 
  
 
