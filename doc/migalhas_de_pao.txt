@@ -36,6 +36,14 @@ provavelmete é por causa da habilitação de acesso de varias vias, na configur
 @CrossOrigin(origins = "http://localhost:4200") // porta padrão angular
 @CrossOrigin(origins = "*") // liberando qualquer domínio, sem restrição
 
+problema com TypeScript products: Product[]
+colocar ! no fim do nome da variável products!: Product[]
+ou colocar o array vazio: products: Product[] = []
+
+problema aula 17 com ngFor(resolvido, o atributo certo seria number ou type) eu tava colocando name
+
+==================================== aula 18 ===========================
+
  
 
 

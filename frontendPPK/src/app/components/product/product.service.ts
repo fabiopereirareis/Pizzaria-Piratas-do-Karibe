@@ -10,6 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class ProductService {
 
   baseUrl = "https://backend-ppk.herokuapp.com/api/contact/"
+  readList = "https://backend-ppk.herokuapp.com/api/contact/list" // também funciona
 
   constructor(private snackBar: MatSnackBar,private http: HttpClient) { }
 
@@ -26,5 +27,8 @@ export class ProductService {
     return this.http.post<Product>(this.baseUrl, product)
   }
 
+  read(): Observable<Product[]>{
+    return this.http.get<Product[]>(this.baseUrl + "list")
+  }
 
 }
