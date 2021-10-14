@@ -39,7 +39,7 @@ public class ContactService {
     public ContactRequestDTO upDateContact(ContactRequestDTO contactRequestDTO, Long id){
         if(verifyExists(id)){
             Contact contact = new Contact();
-            contact.setId_contact(id);
+            contact.setId(id);
             contact.setNumber(contactRequestDTO.getNumber());
             contact.setType(contactRequestDTO.getType());
             contactRepository.save(contact);
