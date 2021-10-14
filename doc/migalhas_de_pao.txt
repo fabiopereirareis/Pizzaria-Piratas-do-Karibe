@@ -42,7 +42,15 @@ ou colocar o array vazio: products: Product[] = []
 
 problema aula 17 com ngFor(resolvido, o atributo certo seria number ou type) eu tava colocando name
 
-==================================== aula 18 ===========================
+componentes do angular:
+componente para tabela
+ng generate @angular/material:table /endeço e nome do componente
+
+aula 21 ensina a colocar virgula em valores de moeda e tambem o R$
+
+problema não está aparecendo o id dos produtos
+==================================== aula 24 ===========================
+
 
  
 

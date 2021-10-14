@@ -1,6 +1,6 @@
 package com.portifolio.pizzariappk.services;
 
-import com.portifolio.pizzariappk.dto.ContactResponseDTO;
+import com.portifolio.pizzariappk.dto.response.ContactResponseDTO;
 import com.portifolio.pizzariappk.dto.request.ContactRequestDTO;
 import com.portifolio.pizzariappk.entities.Contact;
 import com.portifolio.pizzariappk.repositories.ContactRepository;

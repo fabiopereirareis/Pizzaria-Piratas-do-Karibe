@@ -1,14 +1,12 @@
 package com.portifolio.pizzariappk.controllers;
 
-import com.portifolio.pizzariappk.dto.ContactResponseDTO;
+import com.portifolio.pizzariappk.dto.response.ContactResponseDTO;
 import com.portifolio.pizzariappk.dto.request.ContactRequestDTO;
-import com.portifolio.pizzariappk.entities.Contact;
 import com.portifolio.pizzariappk.services.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 
 @RestController

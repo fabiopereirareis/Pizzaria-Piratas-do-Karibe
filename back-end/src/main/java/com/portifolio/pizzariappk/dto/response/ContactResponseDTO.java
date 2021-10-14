@@ -1,4 +1,4 @@
-package com.portifolio.pizzariappk.dto;
+package com.portifolio.pizzariappk.dto.response;
 
 import com.portifolio.pizzariappk.entities.Contact;
 import lombok.AllArgsConstructor;
@@ -14,10 +14,12 @@ import java.util.Optional;
 @AllArgsConstructor
 public class ContactResponseDTO {
 
+    private long id;
     private String number;
     private String type; // mudar para enum
 
     public ContactResponseDTO(Optional<Contact> byId) {
+        this.id = byId.get().getId();
         this.number = byId.get().getNumber();
         this.type = byId.get().getType();
     }
