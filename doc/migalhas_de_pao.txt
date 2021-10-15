@@ -49,7 +49,7 @@ ng generate @angular/material:table /endeço e nome do componente
 aula 21 ensina a colocar virgula em valores de moeda e tambem o R$
 
 problema não está aparecendo o id dos produtos
-==================================== aula 24 ===========================
+==================================== aula desafio delete ===========================
 
 
  
